@@ -1,0 +1,21 @@
+.li-div {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.li:hover .li-div {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.h3-div {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.h3:hover .h3-div {
+  transform: scaleX(1);
+  transform-origin: left;
+}

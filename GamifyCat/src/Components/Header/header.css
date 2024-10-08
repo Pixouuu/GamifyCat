@@ -1,0 +1,53 @@
+.logo {
+  transition: transform 0.5s ease-in-out;
+}
+
+.containerLeft:hover .logo {
+  transform: rotate(360deg);
+}
+
+.li-div-header {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.li-header:hover .li-div-header {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.li-header {
+  transition: color 0.2s ease-in-out;
+}
+
+.bar {
+  width: 36px;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.bar1 {
+  transform: rotate(0) translate(0, 0);
+}
+
+.bar2 {
+  transform: rotate(0) translate(0, 0);
+  margin-top: 14px;
+}
+
+.bar1.open {
+  transform: rotate(45deg) translate(7px, 6px);
+}
+
+.bar2.open {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.btn-container:hover .btn-project {
+  transform: translate(0%, -110%);
+}
+.btn-project {
+  transition: transform 0.125s ease-in-out;
+}

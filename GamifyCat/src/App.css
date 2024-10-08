@@ -1,0 +1,14 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Overlay Noise au dessus des items */
+
+#div-principale {
+  position: relative;
+}
+
+::selection {
+  background-color: green;
+  color: white;
+}
