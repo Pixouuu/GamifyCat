@@ -19,6 +19,7 @@
 
 .li-header {
   transition: color 0.2s ease-in-out;
+  display: inline;
 }
 
 .bar {
@@ -49,5 +50,5 @@
   transform: translate(0%, -110%);
 }
 .btn-project {
-  transition: transform 0.125s ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.08, 0.82, 0.17, 1);
 }
