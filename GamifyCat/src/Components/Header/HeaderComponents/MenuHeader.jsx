@@ -6,9 +6,9 @@ import HoverLinks from '../../GeneralComponents/HoverLinks';
 
 const MenuHeader = ({ isOpen }) => {
   return (
-    <div id='menu' className='bg-white absolute top-0 -right-[1000px] w-[940px] h-screen flex flex-row duration-500 ease-in-out' style={{ right: isOpen ? 0 : -1000 }}>
+    <div id='menu' className='bg-white absolute top-0 -right-[1000px] md:w-[940px] w-full h-screen flex md:flex-row flex-col duration-500 ease-in-out' style={{ right: isOpen ? 0 : -1000 }}>
       <div className='flex-1 h-full flex flex-col items-center '>
-        <ul className='text-[80px] text-dark font-jakarta font-bold leading-tight ml-11 mt-56'>
+        <ul className='md:text-[80px] text-5xl text-dark font-jakarta font-bold leading-tight ml-11 md:mt-56 mt-28'>
           <li className='li-header text-greenColor cursor-pointer'>Home
             <HoverLinks width={"242px"} />
           </li>
@@ -23,7 +23,7 @@ const MenuHeader = ({ isOpen }) => {
           </li>
         </ul>
 
-        <div className='flex flex-col justify-start font-jakarta gap-1 text-dark mt-36 font-bold mr-20'>
+        <div className='flex flex-col justify-start font-jakarta gap-1 text-dark md:mt-36 mt-20 font-bold mr-20'>
           <div className='li-header cursor-pointer'>
             <p>108 Waterfront CT SW, <br /> Calgary, AB, Canada, T2P1K7</p>
             <HoverLinks width={"225px"} /> 
@@ -38,13 +38,13 @@ const MenuHeader = ({ isOpen }) => {
           </div>
         </div>
       </div>
-      <div className='flex-1 h-full flex justify-end'>
-        <div className='mr-24 mb-10 gap-5 flex flex-row justify-end items-end'>
+      
+        <div className='md:ml-48 ml-8 mr-24 mb-10 gap-5 flex flex-row items-end'>
           <img src={Linkedin} alt="" className='w-6 li-header cursor-pointer' />
           <img src={ClutchIcon} alt="" className='w-6 cursor-pointer' />
           <img src={Google} alt="" className='w-6 cursor-pointer' />
         </div>
-      </div>
+    
     </div>
   );
 };

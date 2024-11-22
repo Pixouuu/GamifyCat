@@ -1,23 +1,25 @@
-import React from 'react'
-import TopPartProject from './ProjectsComponents/TopPartProject'
-import LeftPartProject from './ProjectsComponents/LeftPartProject'
-import RightPartProject from './ProjectsComponents/RightPartProject'
-import BottomPartProject from './ProjectsComponents/BottomPartProject'
+import React from "react";
+import TopPartProject from "./ProjectsComponents/TopPartProject";
+import LeftPartProject from "./ProjectsComponents/LeftPartProject";
+import RightPartProject from "./ProjectsComponents/RightPartProject";
+import BottomPartProject from "./ProjectsComponents/BottomPartProject";
 
 function PageProject() {
   return (
+    <div
+      className="bg-black md:w-screen w-full md:h-[2450px] h-[1840px]  "
+      id="project-div"
+    >
+      <TopPartProject />
 
-    <div className='bg-black w-screen h-[2420px] ' id='project-div'>
-        <TopPartProject />
+      <div className=" w-full md:h-[1100px] h-[1000px] flex md:flex-row flex-col items-start justify-evenly md:mt-10">
+        <LeftPartProject />
+        <RightPartProject />
+      </div>
 
-        <div className=' w-full h-[1100px] flex flex-row items-start justify-evenly mt-10'>
-          <LeftPartProject />
-          <RightPartProject />
-        </div>
-
-        <BottomPartProject />
+      <BottomPartProject />
     </div>
-  )
+  );
 }
 
-export default PageProject
+export default PageProject;

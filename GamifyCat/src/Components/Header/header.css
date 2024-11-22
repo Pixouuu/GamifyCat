@@ -45,10 +45,3 @@
 .bar2.open {
   transform: rotate(-45deg) translate(7px, -6px);
 }
-
-.btn-container:hover .btn-project {
-  transform: translate(0%, -110%);
-}
-.btn-project {
-  transition: transform 0.5s cubic-bezier(0.08, 0.82, 0.17, 1);
-}

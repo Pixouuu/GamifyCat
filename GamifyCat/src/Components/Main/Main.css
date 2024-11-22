@@ -1,5 +1,4 @@
 .gradient-background {
-  position: relative;
   background: linear-gradient(
     193.39deg,
     #5dc863 -20.42%,
@@ -157,4 +156,17 @@
 .cart6 {
   animation: float6 10s ease-in-out infinite;
   filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.3));
+}
+
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
 }

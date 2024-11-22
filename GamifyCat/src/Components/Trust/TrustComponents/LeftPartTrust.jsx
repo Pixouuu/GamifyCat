@@ -1,18 +1,27 @@
-import React from 'react'
-import arrowGreen from "../../../../public/arrowGreen.svg"
-import Button from '../../GeneralComponents/Button'
-
+import React from "react";
+import arrowGreen from "../../../../public/arrowGreen.svg";
+import Button from "../../GeneralComponents/Button";
 
 function LeftPartTrust() {
   return (
-    <div className='w-1/2 h-full text-dark font-jakarta flex flex-col justify-center items-center'>
-            <h1 className='text-[90px] leading-none mb-10 mr-36 font-bold'>We're <br /> trustworthy</h1>
-            <p className='text-xl font-semibold'>Trusted by over 100 advertising agencies, companies, media digital <br/> magazines and brands</p>
-            
-            <Button width={"180px"} text1={"About us"} backgroundColor={"#142C16"} color={"#5DC863"} imgSrc={arrowGreen} marginTop={"60px"} marginRight={"470px"}/>
-           
-        </div>
-  )
+    <div className="md:w-1/2 w-full h-full text-dark font-jakarta flex flex-col justify-center items-center">
+      <h1 className="md:text-[90px] text-5xl leading-none mb-10 md:mr-36 font-bold mt-10 md:mt-0 text-start ">
+        We're <br /> trustworthy
+      </h1>
+      <p className="text-xl font-semibold text-center md:text-left mb-10 md:mb-0">
+        Trusted by over 100 advertising agencies, companies, media digital{" "}
+        <br /> magazines and brands
+      </p>
+
+      <Button
+        className={
+          "md:w-[250px] md:h-[60px] h-12 md:text-lg text-sm bg-dark text-greenColor md:mt-[60px] md:mr-[400px]"
+        }
+        text1={"About us"}
+        imgSrc={arrowGreen}
+      />
+    </div>
+  );
 }
 
-export default LeftPartTrust
+export default LeftPartTrust;

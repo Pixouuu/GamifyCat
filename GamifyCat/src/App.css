@@ -16,3 +16,9 @@ body,
 html {
   overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+  * {
+    pointer-events: none;
+  }
+}
