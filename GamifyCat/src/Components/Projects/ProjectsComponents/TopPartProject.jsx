@@ -4,7 +4,7 @@ import AnimationBase from "../../GeneralComponents/AnimationBase";
 
 function TopPartProject() {
   return (
-    <div className="w-full flex md:flex-row flex-col h-72 md:ml-12 ml-14 ">
+    <div className="w-full h-72 flex md:flex-row flex-col md:ml-12 ml-14 ">
       <AnimationBase>
         <h2 className="text-white md:text-8xl text-4xl font-bold font-jakarta md:ml-32 mt-10">
           <b className="text-greenColor">Successful</b>
@@ -12,6 +12,7 @@ function TopPartProject() {
           projects
         </h2>
       </AnimationBase>
+
       <div className="flex flex-1 justify-end">
         <motion.p
           initial={{ x: 100, opacity: 0 }}

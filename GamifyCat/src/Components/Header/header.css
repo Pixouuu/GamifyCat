@@ -1,11 +1,3 @@
-.logo {
-  transition: transform 0.5s ease-in-out;
-}
-
-.containerLeft:hover .logo {
-  transform: rotate(360deg);
-}
-
 .li-div-header {
   transform: scaleX(0);
   transform-origin: right;

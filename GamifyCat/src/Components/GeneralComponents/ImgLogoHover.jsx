@@ -4,7 +4,6 @@ function ImgLogoHover({ src, height }) {
   return (
     <img
       src={src}
-      alt=""
       className="hover:opacity-80 transition-opacity cursor-pointer"
       style={{ height: height }}
     />

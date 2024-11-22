@@ -11,8 +11,8 @@ import ImgLogoHover from "../../GeneralComponents/ImgLogoHover";
 
 function RightPartFooter() {
   return (
-    <div className="flex-1 md:h-full text-white font-jakarta font-bold flex md:flex-row flex-col md:text-xl text-sm items-center justify-end md:mt-3 ">
-      <div className="flex flex-col w-full md:w-52 p-10 md:p-0">
+    <div className="text-white font-jakarta font-bold flex-1 md:h-full flex md:flex-row flex-col md:text-xl text-sm md:mt-3 items-center justify-end">
+      <div className="flex flex-col w-full md:w-52 md:p-0 p-10">
         <motion.span
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -22,6 +22,7 @@ function RightPartFooter() {
         >
           MENU
         </motion.span>
+
         <motion.ul
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -50,6 +51,7 @@ function RightPartFooter() {
             <HoverLinks width={"140px"} />
           </li>
         </motion.ul>
+
         <motion.span
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -59,6 +61,7 @@ function RightPartFooter() {
         >
           LINKS
         </motion.span>
+
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -71,6 +74,7 @@ function RightPartFooter() {
           <ImgLogoHover src={Google} />
         </motion.div>
       </div>
+
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

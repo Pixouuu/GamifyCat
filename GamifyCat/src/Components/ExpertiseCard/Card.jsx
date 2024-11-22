@@ -1,7 +1,6 @@
 import React from "react";
 import "./card.css";
 import CardTemplate from "./CardComponents/CardTemplate";
-import AnimationBase from "../GeneralComponents/AnimationBase";
 import { motion } from "framer-motion";
 
 function Card() {
@@ -13,12 +12,12 @@ function Card() {
       <motion.h1
         initialX={-100}
         finalX={0}
-        className="font-jakarta font-bold md:text-8xl text-5xl md:ml-32 mt-10 mb-5 ml-10 md:mt-20 md:mb-16"
+        className="font-jakarta font-bold md:text-8xl text-5xl md:ml-32 ml-10 md:mt-20 mt-10 md:mb-16 mb-5"
       >
         Expertise
       </motion.h1>
 
-      <div className="w-screen md:h-[720px] h-full flex flex-col gap-10 mt-5 md:mt-0">
+      <div className="w-screen md:h-[720px] h-full flex flex-col gap-10 md:mt-0 mt-5">
         <div className="w-screen h-full flex md:flex-row flex-col justify-center items-center gap-10">
           <CardTemplate
             Titre={"Design"}

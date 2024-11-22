@@ -87,7 +87,7 @@ function Carrousel() {
       <div id="carousel" className="slider flex flex-row">
         {imgs.map((src, index) => (
           <div key={index} className="carousel-item">
-            <div className="md:w-[575px] h-[300px] w-[350px]  bg-white rounded-[30px] flex flex-col justify-center p-10 mr-14 mt-10">
+            <div className="md:w-[575px] w-[350px] h-[300px] bg-white rounded-[30px] flex flex-col justify-center p-10 mr-14 mt-10">
               <img
                 src={src}
                 className="w-36 aspect-video mb-5"

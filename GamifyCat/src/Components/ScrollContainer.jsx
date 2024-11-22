@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 const ScrollContainer = ({ children }) => {
@@ -10,12 +10,12 @@ const ScrollContainer = ({ children }) => {
         await controls.start({
           x: ["0%", "-50%"],
           transition: {
-            duration: 10, // Ajuster la durée pour ralentir la vitesse de défilement de base
+            duration: 10,
             ease: "linear",
             times: [0, 1],
             repeat: Infinity,
-            repeatType: "loop"
-          }
+            repeatType: "loop",
+          },
         });
       }
     };
@@ -24,11 +24,21 @@ const ScrollContainer = ({ children }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", width: "100%", height: "100%", display: 'flex', justifyContent: "center", alignItems: "center" }}
+      style={{
+        overflow: "hidden",
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <motion.div animate={controls} style={{ display: "flex", flexDirection: "row", width: "200%" }}>
+      <motion.div
+        animate={controls}
+        style={{ display: "flex", flexDirection: "row", width: "200%" }}
+      >
         {children}
-        {children}  {/* Duplication */}
+        {children}
       </motion.div>
     </motion.div>
   );

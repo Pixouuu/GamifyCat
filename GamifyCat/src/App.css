@@ -12,10 +12,13 @@ body::-webkit-scrollbar {
   background-color: green;
   color: white;
 }
+
 body,
 html {
   overflow-x: hidden;
 }
+
+/* Responsive */
 
 @media (max-width: 768px) {
   * {

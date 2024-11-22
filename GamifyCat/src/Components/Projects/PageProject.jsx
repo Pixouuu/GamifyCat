@@ -7,7 +7,7 @@ import BottomPartProject from "./ProjectsComponents/BottomPartProject";
 function PageProject() {
   return (
     <div
-      className="bg-black md:w-screen w-full md:h-[2450px] h-[1840px]  "
+      className="bg-black md:w-screen w-full md:h-[2450px] h-[1840px]"
       id="project-div"
     >
       <TopPartProject />

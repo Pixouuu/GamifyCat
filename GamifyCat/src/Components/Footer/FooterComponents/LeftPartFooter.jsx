@@ -10,10 +10,11 @@ function LeftPartFooter() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="md:text-8xl text-5xl mt-12 md:ml-24 ml-10"
+        className="md:text-8xl text-5xl md:ml-24 ml-10 mt-12"
       >
         Let's talk
       </motion.h1>
+
       <motion.h3
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -24,21 +25,23 @@ function LeftPartFooter() {
         hello@gamifycat.io
         <HoverLinks width={"195px"} />
       </motion.h3>
+
       <motion.p
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="text-light md:ml-24 ml-10 opacity-50 md:mt-28 mt-10"
+        className="text-light opacity-50 md:ml-24 ml-10 md:mt-28 mt-10"
       >
         CANADA
       </motion.p>
+
       <motion.h3
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="mt-6 md:text-xl text-sm md:ml-24 ml-10 li-header cursor-pointer inline-block"
+        className="md:text-xl text-sm md:ml-24 ml-10 mt-6 li-header cursor-pointer inline-block"
       >
         108 Waterfront CT SW, Calgary, AB, T2P1K7
         <HoverLinks width={"420px"} />
